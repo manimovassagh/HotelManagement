@@ -30,6 +30,10 @@ public class Person extends Animal {
         this.age = age;
     }
 
+    public Person() {
+
+    }
+
     /**
      * get name for each Person
      * @return name of each person
