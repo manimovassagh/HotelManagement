@@ -1,6 +1,4 @@
-package com.github.manimovassagh.models;
-
-import java.util.List;
+package com.github.manimovassagh.models.buldings;
 
 /**
  * this is our hotel class
@@ -11,8 +9,6 @@ public class Hotel extends Building{
         super(hotelName, addressOfHotel, numberOfRooms);
     }
 
-
-    
 
     /**
      * to string method to use whenever you need show things in string

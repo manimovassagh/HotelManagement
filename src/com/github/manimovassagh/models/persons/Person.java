@@ -1,4 +1,4 @@
-package com.github.manimovassagh.models;
+package com.github.manimovassagh.models.persons;
 
 
 /**
