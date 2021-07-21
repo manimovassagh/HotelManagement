@@ -22,7 +22,7 @@ public class GreetingList {
         System.out.println("Please Enter your name");
         Scanner scanner = new Scanner(System.in);
         String givenNameByGuest = scanner.nextLine();
-        System.out.println("Welcome "+givenNameByGuest+" to " + paradise.getNameOfBuilding());
+        System.out.println("Welcome "+givenNameByGuest+" to " + paradise.getNameOfBuilding()+" "+paradise.getAddressOfBuilding());
         System.out.println("-----------------------------");
         System.out.println("Please Select one of the options");
         System.out.println("1)Booking\n" + "2)Checkout\n" + "3)Food Order\n" + "4)Quit\n");

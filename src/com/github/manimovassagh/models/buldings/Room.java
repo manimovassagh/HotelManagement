@@ -17,17 +17,17 @@ public class Room {
      * specify the reservation status of the room
      * by default is false and means not reserved yet
      */
-    private boolean resrvationStatus = false;
+    private boolean reservationStatus = false;
     /**
-     * select the type of room we have
+     * select the type of room we have Normal or VIP
      */
     private RoomType roomType;
 
-    public Room(int roomNumber, int roomPrice, SingleDouble singleDouble, boolean resrvationStatus, RoomType roomType) {
+    public Room(int roomNumber, int roomPrice, SingleDouble singleDouble, boolean reservationStatus, RoomType roomType) {
         this.roomNumber = roomNumber;
         this.roomPrice = roomPrice;
         this.singleDouble = singleDouble;
-        this.resrvationStatus = resrvationStatus;
+        this.reservationStatus = reservationStatus;
         this.roomType = roomType;
     }
 
@@ -60,8 +60,8 @@ public class Room {
      * define the reservation status of room
      * @return reservation status by default is false means no reserved yet
      */
-    public boolean isResrvationStatus() {
-        return resrvationStatus;
+    public boolean isReservationStatus() {
+        return reservationStatus;
     }
 
     /**
