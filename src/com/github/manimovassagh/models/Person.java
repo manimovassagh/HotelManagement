@@ -56,28 +56,48 @@ public class Person extends Animal {
 
     /**
      * set family of each person
-     * @param family
+     * @param family family of each person
      */
     public void setFamily(String family) {
         this.family = family;
     }
 
+    /**
+     * get gender of each person
+     * @return gender of each person
+     */
     public Gender getGender() {
         return gender;
     }
 
+    /**
+     * set gender of each person
+     * @param gender gender of person
+     */
     public void setGender(Gender gender) {
         this.gender = gender;
     }
 
+    /**
+     * get age of person
+     * @return age of person
+     */
     public Integer getAge() {
         return age;
     }
 
+    /**
+     *set age of person
+     * @param age age of person
+     */
     public void setAge(Integer age) {
         this.age = age;
     }
 
+    /**
+     * This method return person attributes as String
+     * @return person attributes as string
+     */
     @Override
     public String toString() {
         return "Person{" +
