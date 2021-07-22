@@ -12,12 +12,15 @@ public class Main {
      * @param args args
      */
     public static void main(String[] args) {
-        //initialize greeting
+        //initialize Main Service Object to use as Dependency Injection argument
         MainService mainService = new MainService();
+        //inject the main service in greeting
         GreetingList greetingList = new GreetingList(mainService);
+        //initialize the greeting
         greetingList.greeting();
-        // initialize chooser from the list
+        // initialize listChooser object and inject same service inside
         ListChooser listChooser = new ListChooser(mainService);
+        //initialize chooser method
         listChooser.chooseFromGreetingList();
 
     }

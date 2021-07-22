@@ -8,13 +8,16 @@ import com.github.manimovassagh.models.persons.Person;
 
 import java.util.Scanner;
 
+/**
+ * this is our greeting part
+ * we greet the user , give some information and ask name and register user inside our hotel
+ */
 public class GreetingList {
     private MainService mainService;
 
     public GreetingList(MainService mainService) {
         this.mainService = mainService;
     }
-
 
 
     /**
@@ -56,8 +59,8 @@ public class GreetingList {
         System.out.println("Please Enter Your Age , Sorry to Ask That !");
         hotelGuest.setAge(scanner.nextInt());
         System.out.println("Very Nice. Registration is now Successfull");
-        System.out.println("This is your Information");
-        System.out.println(hotelGuest);
+        System.out.println("This is your Final Registration");
+        System.out.println(hotelGuest.toString());
         mainService.addNewCustomer(hotelGuest);
 
 

@@ -104,7 +104,7 @@ public class Person extends Animal {
      */
     @Override
     public String toString() {
-        return "Person{" +
+        return "Guest Registration Details{" +
                 "name='" + name + '\'' +
                 ", family='" + family + '\'' +
                 ", gender=" + gender +
