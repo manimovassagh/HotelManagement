@@ -3,10 +3,8 @@ package com.github.manimovassagh.services;
 import com.github.manimovassagh.models.buldings.*;
 import com.github.manimovassagh.models.persons.Person;
 
-import java.util.List;
 import java.util.Map;
 import java.util.Scanner;
-import java.util.stream.Stream;
 
 
 /**
@@ -33,6 +31,7 @@ public class ListChooser {
         int choice;
         choice = scanner.nextInt();
 //        System.out.println(choice);
+        BookingSystem bookingSystem = new BookingSystem();
         if (choice < 1 || choice > 4) {
             System.out.println("You entered an invalid choice, The valid range is between 1 to 4 !");
         }
@@ -45,32 +44,19 @@ public class ListChooser {
             );
             Scanner scan = new Scanner(System.in);
             String chosenByUser = scan.nextLine();
-            System.out.println(chosenByUser);
+
 
             if (chosenByUser.equals("1")) {
-                List<Room> rooms = RoomList.getHotelRoomsList();
-                Stream<Room> roomStream = rooms.stream().filter(e -> e.getSingleDouble() == SingleDouble.SINGLE).filter(e->e.getRoomType()==RoomType.NORMAL);
-                System.out.println("Please Select the Room Number");
-                roomStream.forEach(e -> System.out.println(e.toString()));
-                Scanner roomChooser = new Scanner(System.in);
-                int roomNumberForBooking = roomChooser.nextInt();
-                Room bookedRoom = RoomList.getHotelRoomsList().get(roomNumberForBooking-1);
-                bookedRoom.setReservationStatus(true);
-                System.out.println("Good Choice! Roon Number " + roomNumberForBooking+" Is booked for you! we wish you a very nice stay at " +HotelInstance.makeHotelInstance().getNameOfBuilding());
-
+                bookingSystem.bookTheRoom();
             }
             if (chosenByUser.equals("2")) {
-                //temporary
-                return;
-
+                bookingSystem.bookTheRoom();
             }
             if (chosenByUser.equals("3")) {
-                //temporary
-                return;
+                bookingSystem.bookTheRoom();
             }
             if (chosenByUser.equals("4")) {
-                //temporary
-                return;
+                bookingSystem.bookTheRoom();
             }
 
 
