@@ -15,10 +15,12 @@ public class GreetingList {
         this.mainService = mainService;
     }
 
+
+
     /**
      * this is the welcome page for the user
      */
-    public  void greeting() {
+    public void greeting() {
         Hotel paradise = HotelInstance.makeHotelInstance();
         System.out.println("Welcome to the " + paradise.getNameOfBuilding());
         System.out.println("Our Hotel Located in " + paradise.getAddressOfBuilding() + " and we have " + paradise.getNumberOfRooms() + " rooms in our Hotel");
@@ -28,13 +30,13 @@ public class GreetingList {
         System.out.println("Please Enter your name");
         Scanner scanner = new Scanner(System.in);
         hotelGuest.setName(scanner.nextLine());
-        System.out.println("Welcome "+hotelGuest.getName()+" to " + paradise.getNameOfBuilding()+" "+paradise.getAddressOfBuilding());
+        System.out.println("Welcome " + hotelGuest.getName() + " to " + paradise.getNameOfBuilding() + " " + paradise.getAddressOfBuilding());
         System.out.println("-----------------------------");
         System.out.println("Let us first Register you by Our registration Service");
         System.out.println("Please Enter Your family");
         hotelGuest.setFamily(scanner.nextLine());
         System.out.println("Please Enter your Gender (M/F/D)");
-        String genderInput =scanner.nextLine();
+        String genderInput = scanner.nextLine();
         switch (genderInput) {
             case "m":
             case "M":
@@ -53,13 +55,10 @@ public class GreetingList {
         }
         System.out.println("Please Enter Your Age , Sorry to Ask That !");
         hotelGuest.setAge(scanner.nextInt());
-        System.out.println("Very Nice Registration is now Successfull");
+        System.out.println("Very Nice. Registration is now Successfull");
         System.out.println("This is your Information");
         System.out.println(hotelGuest);
         mainService.addNewCustomer(hotelGuest);
-        System.out.println("-----------------------------");
-        System.out.println("Please Select one of the Services");
-        System.out.println("1)Booking\n" + "2)Checkout\n" + "3)Food Order\n" + "4)Quit\n");
 
 
     }

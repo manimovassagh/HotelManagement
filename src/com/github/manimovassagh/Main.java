@@ -3,6 +3,7 @@ package com.github.manimovassagh;
 
 import com.github.manimovassagh.services.GreetingList;
 import com.github.manimovassagh.services.ListChooser;
+import com.github.manimovassagh.services.MainService;
 
 
 public class Main {
@@ -12,9 +13,12 @@ public class Main {
      */
     public static void main(String[] args) {
         //initialize greeting
-        GreetingList.greeting();
+        MainService mainService = new MainService();
+        GreetingList greetingList = new GreetingList(mainService);
+        greetingList.greeting();
         // initialize chooser from the list
-        ListChooser.chooseFromGreetingList();
+        ListChooser listChooser = new ListChooser(mainService);
+        listChooser.chooseFromGreetingList();
 
     }
 }

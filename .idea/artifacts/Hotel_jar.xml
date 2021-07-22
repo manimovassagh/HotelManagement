@@ -1,0 +1,9 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="Hotel:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/Hotel_jar</output-path>
+    <root id="archive" name="Hotel.jar">
+      <element id="module-output" name="Hotel" />
+      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/org/jetbrains/annotations/18.0.0/annotations-18.0.0.jar" path-in-jar="/" />
+    </root>
+  </artifact>
+</component>
