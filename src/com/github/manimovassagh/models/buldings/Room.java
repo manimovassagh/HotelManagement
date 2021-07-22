@@ -99,6 +99,10 @@ public class Room {
         return roomType;
     }
 
+    public void setReservationStatus(boolean reservationStatus) {
+        this.reservationStatus = reservationStatus;
+    }
+
     @Override
     public String toString() {
         String showReservationStatus;
