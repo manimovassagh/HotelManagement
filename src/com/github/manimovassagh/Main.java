@@ -1,14 +1,19 @@
 package com.github.manimovassagh;
 
 
+import com.github.manimovassagh.models.buldings.Room;
+import com.github.manimovassagh.models.buldings.RoomList;
 import com.github.manimovassagh.services.GreetingList;
 import com.github.manimovassagh.services.ListChooser;
 import com.github.manimovassagh.services.MainService;
+
+import java.util.List;
 
 
 public class Main {
     /**
      * this is our main method which is responsible to start our program
+     *
      * @param args args
      */
     public static void main(String[] args) {
@@ -22,6 +27,9 @@ public class Main {
         ListChooser listChooser = new ListChooser(mainService);
         //initialize chooser method
         listChooser.chooseFromGreetingList();
+        List<Room> hotelRoomsList = RoomList.getHotelRoomsList();
+
+
 
     }
 }

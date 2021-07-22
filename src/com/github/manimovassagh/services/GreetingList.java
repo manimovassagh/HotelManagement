@@ -13,8 +13,15 @@ import java.util.Scanner;
  * we greet the user , give some information and ask name and register user inside our hotel
  */
 public class GreetingList {
+    /**
+     * define a main service to be usable by other parts
+     */
     private MainService mainService;
 
+    /**
+     * accept main service as argument to register
+     * @param mainService return main service
+     */
     public GreetingList(MainService mainService) {
         this.mainService = mainService;
     }
@@ -54,7 +61,8 @@ public class GreetingList {
                 hotelGuest.setGender(Gender.DIVERSE);
                 break;
             default:
-                throw new IllegalStateException("Unexpected value: " + genderInput);
+                System.out.println("please enter a valid Gender Type m or f or d");
+
         }
         System.out.println("Please Enter Your Age , Sorry to Ask That !");
         hotelGuest.setAge(scanner.nextInt());

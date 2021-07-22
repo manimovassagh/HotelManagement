@@ -1,15 +1,12 @@
 package com.github.manimovassagh.models.buldings;
 
-import com.github.manimovassagh.models.persons.Guest;
-import org.jetbrains.annotations.NotNull;
-
 import java.util.ArrayList;
 import java.util.List;
 
 public class RoomList {
     //    this is for testing the return list
     public static void main(String[] args) {
-        List<Room> rooms = generateHotelRoomsList();
+        List<Room> rooms = getHotelRoomsList();
         rooms.stream().filter(e -> e.getRoomNumber() == 1).forEach(e -> e.setReservationStatus(true));
         rooms.forEach(e -> System.out.println(e.toString()));
 
@@ -21,7 +18,7 @@ public class RoomList {
      * @return room list of hotel
      */
 
-    public static List<Room> generateHotelRoomsList() {
+    public static List<Room> getHotelRoomsList() {
         List<Room> roomList = new ArrayList<>();
         roomList.add(new Room(1, SingleDouble.SINGLE, false, RoomType.VIP));
         roomList.add(new Room(2, SingleDouble.DOUBLEROOM, false, RoomType.VIP));
