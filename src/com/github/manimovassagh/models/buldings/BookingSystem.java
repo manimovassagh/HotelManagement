@@ -4,11 +4,15 @@ import java.util.List;
 import java.util.Scanner;
 import java.util.stream.Stream;
 
+/**
+ * this is to prevent repeat in booking initializer
+ * with can Book functional interface implementation and book the room method do the job
+ */
 public class BookingSystem implements CanBook {
     @Override
-    public void bookTheRoom() {
+    public void bookTheRoom(SingleDouble singleDouble ,RoomType roomType) {
         List<Room> rooms = RoomList.getHotelRoomsList();
-        Stream<Room> roomStream = rooms.stream().filter(e -> e.getSingleDouble() == SingleDouble.SINGLE).filter(e -> e.getRoomType() == RoomType.NORMAL);
+        Stream<Room> roomStream = rooms.stream().filter(e -> e.getSingleDouble() == singleDouble).filter(e -> e.getRoomType() == roomType);
         System.out.println("Please Select the Room Number");
         roomStream.forEach(e -> System.out.println(e.toString()));
         Scanner roomChooser = new Scanner(System.in);

@@ -1,9 +1,9 @@
 package com.github.manimovassagh.models.buldings;
 
-import java.util.List;
-import java.util.Scanner;
-import java.util.stream.Stream;
+/**
+ * this is a functional interface for booking system
+ */
 @FunctionalInterface
 public interface CanBook {
-    void bookTheRoom();
+    void bookTheRoom(SingleDouble singleDouble ,RoomType roomType);
 }

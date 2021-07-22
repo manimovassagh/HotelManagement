@@ -47,16 +47,16 @@ public class ListChooser {
 
 
             if (chosenByUser.equals("1")) {
-                bookingSystem.bookTheRoom();
+                bookingSystem.bookTheRoom(SingleDouble.SINGLE,RoomType.NORMAL);
             }
             if (chosenByUser.equals("2")) {
-                bookingSystem.bookTheRoom();
+                bookingSystem.bookTheRoom(SingleDouble.DOUBLEROOM,RoomType.NORMAL);
             }
             if (chosenByUser.equals("3")) {
-                bookingSystem.bookTheRoom();
+                bookingSystem.bookTheRoom(SingleDouble.SINGLE,RoomType.VIP);
             }
             if (chosenByUser.equals("4")) {
-                bookingSystem.bookTheRoom();
+                bookingSystem.bookTheRoom(SingleDouble.DOUBLEROOM,RoomType.VIP);
             }
 
 
