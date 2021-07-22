@@ -2,7 +2,7 @@ package com.github.manimovassagh.models.buldings;
 
 import java.time.Year;
 
-public class Building {
+public abstract class Building {
     String nameOfBuilding;
     String addressOfBuilding;
     int numberOfRooms;
