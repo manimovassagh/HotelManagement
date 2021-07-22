@@ -17,16 +17,18 @@ public class RoomList {
         Guest guest = new Guest();
         List<Room> roomList = new ArrayList<>();
         roomList.add(new Room(1,SingleDouble.SINGLE,false,RoomType.VIP));
-        roomList.add(new Room(2,SingleDouble.SINGLE,false,RoomType.VIP));
-        roomList.add(new Room(3,SingleDouble.SINGLE,false,RoomType.VIP));
-        roomList.add(new Room(4,SingleDouble.SINGLE,false,RoomType.VIP));
-        roomList.add(new Room(1,SingleDouble.SINGLE,false,RoomType.VIP));
-        roomList.add(new Room(1,SingleDouble.SINGLE,false,RoomType.VIP));
-        roomList.add(new Room(1,SingleDouble.SINGLE,false,RoomType.VIP));
-        roomList.add(new Room(1,SingleDouble.SINGLE,false,RoomType.VIP));
-        roomList.add(new Room(1,SingleDouble.SINGLE,false,RoomType.VIP));
-        roomList.add(new Room(1,SingleDouble.SINGLE,false,RoomType.VIP));
-        roomList.add(new Room(1,SingleDouble.SINGLE,false,RoomType.VIP));
+        roomList.add(new Room(2,SingleDouble.DOUBLEROOM,false,RoomType.VIP));
+        roomList.add(new Room(3,SingleDouble.SINGLE,false,RoomType.NORMAL));
+        roomList.add(new Room(4,SingleDouble.DOUBLEROOM,false,RoomType.NORMAL));
+        roomList.add(new Room(5,SingleDouble.SINGLE,false,RoomType.NORMAL));
+        roomList.add(new Room(6,SingleDouble.DOUBLEROOM,false,RoomType.NORMAL));
+        roomList.add(new Room(7,SingleDouble.DOUBLEROOM,false,RoomType.NORMAL));
+        roomList.add(new Room(8,SingleDouble.DOUBLEROOM,false,RoomType.NORMAL));
+        roomList.add(new Room(9,SingleDouble.SINGLE,false,RoomType.NORMAL));
+        roomList.add(new Room(10,SingleDouble.DOUBLEROOM,false,RoomType.NORMAL));
+        roomList.add(new Room(11,SingleDouble.SINGLE,false,RoomType.VIP));
+        roomList.add(new Room(12,SingleDouble.DOUBLEROOM,false,RoomType.VIP));
+
         return roomList;
     }
 

@@ -101,12 +101,18 @@ public class Room {
 
     @Override
     public String toString() {
-        return "Room{" +
+        String showReservationStatus;
+        if (!reservationStatus){
+           showReservationStatus = "Not Reserved Yet";
+        } else {
+            showReservationStatus = "Already Reserved";
+        }
+        return "Hotel Rooms List{" +
                 "roomNumber=" + roomNumber +
-                ", roomPrice=" + roomPrice + "€" +
-                ", singleDouble=" + singleDouble +
-                ", reservationStatus=" + reservationStatus +
+                ", singleDouble=" + singleDouble.toString().toLowerCase().trim()+
                 ", roomType=" + roomType +
+                ", roomPrice=" + roomPrice + "€" +
+                ", reservation Status= " + showReservationStatus +
                 '}';
     }
 }
