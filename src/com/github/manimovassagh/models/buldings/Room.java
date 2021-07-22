@@ -92,8 +92,7 @@ public class Room {
     /**
      * get type of the room
      *
-     * @return the type of room which is normal or vip
-     * @See RoomType enum
+     * @return the type of room which is normal or vip(it defined in room type enum)
      */
     public RoomType getRoomType() {
         return roomType;
@@ -106,14 +105,14 @@ public class Room {
     @Override
     public String toString() {
         String showReservationStatus;
-        if (!reservationStatus){
-           showReservationStatus = "Not Reserved Yet";
+        if (!reservationStatus) {
+            showReservationStatus = "Not Reserved Yet";
         } else {
             showReservationStatus = "Already Reserved";
         }
         return "Hotel Rooms List{" +
                 "roomNumber=" + roomNumber +
-                ", singleDouble=" + singleDouble.toString().toLowerCase().trim()+
+                ", singleDouble=" + singleDouble.toString().toLowerCase().trim() +
                 ", roomType=" + roomType +
                 ", roomPrice=" + roomPrice + "€" +
                 ", reservation Status= " + showReservationStatus +
