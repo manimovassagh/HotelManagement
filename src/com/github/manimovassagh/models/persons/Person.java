@@ -112,4 +112,8 @@ public class Person extends Animal {
                 '}';
     }
 
+    @Override
+    public void setPrimaryKey(int guestId) {
+
+    }
 }

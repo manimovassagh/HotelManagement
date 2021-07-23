@@ -20,6 +20,7 @@ public class GreetingList {
 
     /**
      * accept main service as argument to register
+     *
      * @param mainService return main service
      */
     public GreetingList(MainService mainService) {
@@ -32,11 +33,11 @@ public class GreetingList {
      */
     public void greeting() {
         Hotel paradise = HotelInstance.makeHotelInstance();
-        System.out.println("Welcome to the " + paradise.getNameOfBuilding()+" "+paradise.getAddressOfBuilding());
+        System.out.println("Welcome to the " + paradise.getNameOfBuilding() + " " + paradise.getAddressOfBuilding());
         System.out.println("Our Hotel Located in " + paradise.getAddressOfBuilding() + " and we have " + paradise.getNumberOfRooms() + " rooms in our Hotel");
         System.out.println("We hope The best Stay for you journey");
         System.out.println("-----------------------------");
-        Person hotelGuest = new Guest();
+        Guest hotelGuest = new Guest();
         System.out.println("Please Enter your name");
         Scanner scanner = new Scanner(System.in);
         hotelGuest.setName(scanner.nextLine());
@@ -47,9 +48,11 @@ public class GreetingList {
         hotelGuest.setFamily(scanner.nextLine());
         System.out.println("Please Enter your Gender (M/F/D)");
         String genderInput = scanner.nextLine();
-        GenderSwitcher.genderSwitcher(genderInput,hotelGuest);
+        GenderSwitcher.genderSwitcher(genderInput, hotelGuest);
         System.out.println("Please Enter Your Age , Sorry to Ask That !");
         hotelGuest.setAge(scanner.nextInt());
+        System.out.println("Please Enter how many night you want to enjoy our Hotel !");
+        hotelGuest.setNumberOfNightsToStay(scanner.nextInt());
         System.out.println("Very Nice. Registration is now Successfull");
         System.out.println("This is your Final Registration");
         System.out.println(hotelGuest.toString());

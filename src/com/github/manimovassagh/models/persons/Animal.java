@@ -17,4 +17,6 @@ public abstract class Animal {
     public void setAlive(boolean alive) {
         isAlive = alive;
     }
+
+    public abstract void setPrimaryKey(int guestId);
 }

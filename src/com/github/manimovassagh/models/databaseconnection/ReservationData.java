@@ -1,6 +1,5 @@
 package com.github.manimovassagh.models.databaseconnection;
 
-import com.github.manimovassagh.models.buldings.Room;
 import com.github.manimovassagh.models.persons.Guest;
 
 import java.util.ArrayList;
