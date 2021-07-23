@@ -98,9 +98,6 @@ public class Room {
         return roomType;
     }
 
-    public void setReservationStatus(boolean reservationStatus) {
-        this.reservationStatus = reservationStatus;
-    }
 
     @Override
     public String toString() {
@@ -117,5 +114,9 @@ public class Room {
                 ", roomPrice=" + roomPrice + "€" +
                 ", reservation Status= " + showReservationStatus +
                 '}';
+    }
+
+    public void setReservationStatus(boolean reservationStatus) {
+        this.reservationStatus = reservationStatus;
     }
 }

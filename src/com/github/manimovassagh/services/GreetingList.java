@@ -32,7 +32,7 @@ public class GreetingList {
      */
     public void greeting() {
         Hotel paradise = HotelInstance.makeHotelInstance();
-        System.out.println("Welcome to the " + paradise.getNameOfBuilding());
+        System.out.println("Welcome to the " + paradise.getNameOfBuilding()+" "+paradise.getAddressOfBuilding());
         System.out.println("Our Hotel Located in " + paradise.getAddressOfBuilding() + " and we have " + paradise.getNumberOfRooms() + " rooms in our Hotel");
         System.out.println("We hope The best Stay for you journey");
         System.out.println("-----------------------------");

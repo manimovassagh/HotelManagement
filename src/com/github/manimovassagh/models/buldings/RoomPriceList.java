@@ -2,7 +2,7 @@ package com.github.manimovassagh.models.buldings;
 
 import java.util.HashMap;
 import java.util.Map;
-import java.util.Set;
+
 
 public  class RoomPriceList {
     public static Map<String,Integer> roomPriceGenerate(){

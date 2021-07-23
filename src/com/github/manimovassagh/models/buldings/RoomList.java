@@ -5,12 +5,12 @@ import java.util.List;
 
 public class RoomList {
     //    this is for testing the return list
-    public static void main(String[] args) {
-        List<Room> rooms = getHotelRoomsList();
-        rooms.stream().filter(e -> e.getRoomNumber() == 1).forEach(e -> e.setReservationStatus(true));
-        rooms.forEach(e -> System.out.println(e.toString()));
-
-    }
+//    public static void main(String[] args) {
+//        List<Room> rooms = getHotelRoomsList();
+//        rooms.stream().filter(e -> e.getRoomNumber() == 1).forEach(e -> e.setReservationStatus(true));
+//        rooms.forEach(e -> System.out.println(e.toString()));
+//
+//    }
 
     /**
      * define the repository of our Hotel room list
@@ -35,4 +35,7 @@ public class RoomList {
         return roomList;
     }
 
+    public static void setReservationInList (int roomNumber,boolean reservationStatus){
+        getHotelRoomsList().get(roomNumber).setReservationStatus(reservationStatus);
+    }
 }
