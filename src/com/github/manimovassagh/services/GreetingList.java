@@ -2,9 +2,7 @@ package com.github.manimovassagh.services;
 
 import com.github.manimovassagh.models.buldings.Hotel;
 import com.github.manimovassagh.models.buldings.HotelInstance;
-import com.github.manimovassagh.models.persons.Gender;
 import com.github.manimovassagh.models.persons.Guest;
-import com.github.manimovassagh.models.persons.Person;
 
 import java.util.Scanner;
 

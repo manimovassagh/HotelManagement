@@ -5,6 +5,9 @@ import com.github.manimovassagh.models.persons.Person;
 
 import static com.github.manimovassagh.models.persons.Gender.*;
 
+/**
+ * this method evaluate the input gender by user
+ */
 public class GenderSwitcher {
     public static void genderSwitcher(String genderInput, Person hotelGuest){
         switch (genderInput) {
@@ -26,7 +29,11 @@ public class GenderSwitcher {
         }
     }
 
-
+    /**
+     * this method check the return value from database and converted to our gender enum
+     * @param gender gender value which return from database
+     * @return gender value in our enum format
+     */
     public static Gender genderConverter(String gender){
         Gender returnGender = null;
         if(gender.equals("m") || gender.equals("M")){
