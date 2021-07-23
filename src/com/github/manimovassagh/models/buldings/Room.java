@@ -8,7 +8,7 @@ public class Room {
      * specify the number of rooms
      * That works like id for our project
      */
-    private int roomNumber;
+    private Integer roomNumber;
     /**
      * specify the price of room
      */
@@ -58,11 +58,17 @@ public class Room {
      * @return number of room
      */
 
-    public int getRoomNumber() {
+    public Integer getRoomNumber() {
         return roomNumber;
     }
 
+
+    public String getRoomNumberString(){
+        return getRoomNumber().toString();
+    }
+
     /**
+     *
      * get room price
      *
      * @return price of room in Euro
