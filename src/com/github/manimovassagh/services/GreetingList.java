@@ -47,23 +47,7 @@ public class GreetingList {
         hotelGuest.setFamily(scanner.nextLine());
         System.out.println("Please Enter your Gender (M/F/D)");
         String genderInput = scanner.nextLine();
-        switch (genderInput) {
-            case "m":
-            case "M":
-                hotelGuest.setGender(Gender.MALE);
-                break;
-            case "f":
-            case "F":
-                hotelGuest.setGender(Gender.FEMALE);
-                break;
-            case "d":
-            case "D":
-                hotelGuest.setGender(Gender.DIVERSE);
-                break;
-            default:
-                System.out.println("please enter a valid Gender Type m or f or d");
-
-        }
+        GenderSwitcher.genderSwitcher(genderInput,hotelGuest);
         System.out.println("Please Enter Your Age , Sorry to Ask That !");
         hotelGuest.setAge(scanner.nextInt());
         System.out.println("Very Nice. Registration is now Successfull");
