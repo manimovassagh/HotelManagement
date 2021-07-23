@@ -21,6 +21,9 @@ public class GuestReaderFromDatabaseJDBC {
     public static final String PASSWORD = "";
     public static final String GUEST_TABLE = "guest";
 
+    /**
+     * define an array list to save return data from database
+     */
     private List<Guest> allGuestsList = new ArrayList<>();
 
     /**
