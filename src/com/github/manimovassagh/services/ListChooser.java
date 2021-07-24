@@ -1,6 +1,7 @@
 package com.github.manimovassagh.services;
 
 import com.github.manimovassagh.models.buldings.*;
+import com.github.manimovassagh.models.persons.Guest;
 import com.github.manimovassagh.models.persons.Person;
 
 import java.util.Map;
@@ -8,7 +9,7 @@ import java.util.Scanner;
 
 
 /**
- * define a list chooser class as somehow GUI for user
+ * Define a list chooser class as somehow GUI for user
  */
 public class ListChooser {
     private MainService mainService;
@@ -58,6 +59,7 @@ public class ListChooser {
             if (chosenByUser.equals("4")) {
                 bookingSystem.bookTheRoom(SingleDouble.DOUBLEROOM,RoomType.VIP);
             }
+
 
 
         }

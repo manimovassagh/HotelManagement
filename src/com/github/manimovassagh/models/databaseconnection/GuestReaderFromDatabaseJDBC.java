@@ -15,10 +15,20 @@ import java.util.List;
 public class GuestReaderFromDatabaseJDBC {
     /**
      * all 4 below lines are standard JDBC Connecting , you specify connectivity,user,password and table.finished !!
+     * Connectivity is the path for JDBC to use for connecting
      */
     public static final String CONNECTIVITY = "jdbc:mysql://localhost:3306/guestdb";
+    /**
+     * User in mySQL Database
+     */
     public static final String USER = "root";
+    /**
+     * password in mySQL Database
+     */
     public static final String PASSWORD = "";
+    /**
+     * name of table in database
+     */
     public static final String GUEST_TABLE = "guest";
 
     /**

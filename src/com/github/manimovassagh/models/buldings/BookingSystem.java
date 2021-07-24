@@ -10,7 +10,7 @@ import java.util.stream.Stream;
  */
 public class BookingSystem implements CanBook {
     @Override
-    public void bookTheRoom(SingleDouble singleDouble, RoomType roomType) {
+    public Room bookTheRoom(SingleDouble singleDouble, RoomType roomType) {
         List<Room> rooms = RoomList.getHotelRoomsList();
         Stream<Room> roomStream = rooms.stream().filter(e -> e.getSingleDouble() == singleDouble).filter(e -> e.getRoomType() == roomType);
         System.out.println("Please Select the Room Number");
@@ -18,8 +18,13 @@ public class BookingSystem implements CanBook {
         Scanner roomChooser = new Scanner(System.in);
         int roomNumberForBooking = roomChooser.nextInt();
         Room bookedRoom = rooms.get(roomNumberForBooking - 1);
-        rooms.get(roomNumberForBooking - 1).setReservationStatus(true);
-        System.out.println("Good Choice! Roon Number " + roomNumberForBooking + " Is booked for you! we wish you a very nice stay at " + HotelInstance.makeHotelInstance().getNameOfBuilding());
+        rooms.get(roomNumberForBooking - 1).setReserved(true);
+        System.out.println("Good Choice! Roon Number " + bookedRoom.getRoomNumber() + " Is booked for you! we wish you a very nice stay at " + HotelInstance.makeHotelInstance().getNameOfBuilding());
         rooms.forEach(System.out::println);
+        return getBookedRoom(bookedRoom);
+    }
+
+    public static Room getBookedRoom(Room bookedRoom) {
+        return bookedRoom;
     }
 }

@@ -36,6 +36,6 @@ public class RoomList {
     }
 
     public static void setReservationInList (int roomNumber,boolean reservationStatus){
-        getHotelRoomsList().get(roomNumber).setReservationStatus(reservationStatus);
+        getHotelRoomsList().get(roomNumber).setReserved(reservationStatus);
     }
 }

@@ -8,6 +8,9 @@ import java.util.stream.Stream;
 
 public class Guest extends Person {
     int numberOfNightsToStay;
+    int bookedRoomNumber;
+
+
 
     /**
      * constructor with number of rooms to stay
@@ -71,5 +74,9 @@ public class Guest extends Person {
                 ", age=" + age +
                 ", numberOfNightsToStay is " + numberOfNightsToStay + " Nights" +
                 '}';
+    }
+
+    public void setBookedRoomNumber(Room room) {
+        BookingSystem.getBookedRoom(room);
     }
 }

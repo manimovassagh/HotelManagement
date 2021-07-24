@@ -1,7 +1,5 @@
 package com.github.manimovassagh.models.buldings;
 
-import com.github.manimovassagh.models.persons.Guest;
-
 public class Room {
 
     /**
@@ -21,7 +19,7 @@ public class Room {
      * specify the reservation status of the room
      * by default is false and means not reserved yet
      */
-    private boolean reservationStatus = false;
+    private boolean isReserved = false;
     /**
      * select the type of room we have Normal or VIP
      */
@@ -33,10 +31,10 @@ public class Room {
      *
      * @param roomNumber        number of room
      * @param singleDouble      single or double room
-     * @param reservationStatus reservation status
+     * @param isReserved reservation status
      * @param roomType          type of the room which can be VIP or Normal --See RoomType Enum
      */
-    public Room(int roomNumber, SingleDouble singleDouble, boolean reservationStatus, RoomType roomType) {
+    public Room(int roomNumber, SingleDouble singleDouble, boolean isReserved, RoomType roomType) {
         if (roomType.equals(RoomType.NORMAL) && singleDouble.equals(SingleDouble.SINGLE)) {
             this.roomPrice = 80;
         } else if (roomType.equals(RoomType.NORMAL) && singleDouble.equals(SingleDouble.DOUBLEROOM)) {
@@ -48,7 +46,7 @@ public class Room {
         }
         this.roomNumber = roomNumber;
         this.singleDouble = singleDouble;
-        this.reservationStatus = reservationStatus;
+        this.isReserved = isReserved;
         this.roomType = roomType;
     }
 
@@ -91,8 +89,8 @@ public class Room {
      *
      * @return reservation status by default is false means no reserved yet
      */
-    public boolean isReservationStatus() {
-        return reservationStatus;
+    public boolean isReserved() {
+        return isReserved;
     }
 
     /**
@@ -108,7 +106,7 @@ public class Room {
     @Override
     public String toString() {
         String showReservationStatus;
-        if (!reservationStatus) {
+        if (!isReserved) {
             showReservationStatus = "Not Reserved Yet";
         } else {
             showReservationStatus = "Already Reserved";
@@ -122,7 +120,7 @@ public class Room {
                 '}';
     }
 
-    public void setReservationStatus(boolean reservationStatus) {
-        this.reservationStatus = reservationStatus;
+    public void setReserved(boolean reserved) {
+        this.isReserved = reserved;
     }
 }
