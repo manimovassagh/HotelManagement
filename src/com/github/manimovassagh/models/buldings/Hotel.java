@@ -12,8 +12,6 @@ public class Hotel extends Building {
     }
 
 
-
-
     /**
      * to string method to use whenever you need show things in string
      *

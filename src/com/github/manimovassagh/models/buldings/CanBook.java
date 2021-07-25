@@ -5,5 +5,5 @@ package com.github.manimovassagh.models.buldings;
  */
 @FunctionalInterface
 public interface CanBook {
-    Room bookTheRoom(SingleDouble singleDouble , RoomType roomType);
+    void bookTheRoom(SingleDouble singleDouble , RoomType roomType);
 }
