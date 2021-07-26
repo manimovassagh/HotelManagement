@@ -6,12 +6,17 @@ import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.SQLException;
 import java.sql.Statement;
+import java.util.List;
 
 import static com.github.manimovassagh.models.databaseconnection.GuestReaderFromDatabaseJDBC.*;
 
-public class GuestWriterToDatabaseJDBC {
+public class GuestWriterToDatabaseJDBC implements HotelBookingDAO {
     Connection connectToGuestDatabase;
 
+    /**
+     * this method is responsible for writing data in database
+     * @param guest the guest that booked the room
+     */
     public void writerToDatabase(Guest guest) {
         {
             try {
@@ -23,7 +28,7 @@ public class GuestWriterToDatabaseJDBC {
                         + ","
                         + "'" + guest.getFamily() + "'"
                         + ","
-                        + "'" + guest.getGender()+"'"
+                        + "'" + guest.getGender() + "'"
                         + ","
                         + guest.getAge() + ","
                         + guest.getNumberOfNightsToStay() + ")";
@@ -34,6 +39,42 @@ public class GuestWriterToDatabaseJDBC {
                 e.printStackTrace();
             }
         }
+
+    }
+
+    /**
+     * get all booking data from database
+     * @return booking list collection
+     */
+    @Override
+    public List<Guest> getAllBookingData() {
+        return null;
+    }
+
+    /**
+     * add booked guest to database
+     * @param guest booked guest
+     */
+    @Override
+    public void addBookedData(Guest guest) {
+        writerToDatabase(guest);
+    }
+
+    /**
+     * delete booked guest from database
+     * @param guest the guest that we want to delete from database
+     */
+    @Override
+    public void deleteBookedData(Guest guest) {
+
+    }
+
+    /**
+     * update specific booked guest from database
+     * @param guest  guest that we want to change(update) in database
+     */
+    @Override
+    public void updateBookedData(Guest guest) {
 
     }
 }

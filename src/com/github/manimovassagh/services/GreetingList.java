@@ -2,6 +2,7 @@ package com.github.manimovassagh.services;
 
 import com.github.manimovassagh.models.buldings.Hotel;
 import com.github.manimovassagh.models.buldings.HotelInstance;
+import com.github.manimovassagh.models.databaseconnection.GuestWriterToDatabaseJDBC;
 import com.github.manimovassagh.models.persons.Guest;
 
 import java.util.Scanner;
@@ -51,6 +52,8 @@ public class GreetingList {
         hotelGuest.setAge(scanner.nextInt());
         System.out.println("Please Enter how many night you want to enjoy our Hotel !");
         hotelGuest.setNumberOfNightsToStay(scanner.nextInt());
+        GuestWriterToDatabaseJDBC bookedGuest = new GuestWriterToDatabaseJDBC();
+        bookedGuest.addBookedData(hotelGuest);
         System.out.println("Very Nice. Registration is now Successfull");
         System.out.println("This is your Final Registration");
         System.out.println(hotelGuest.toString());

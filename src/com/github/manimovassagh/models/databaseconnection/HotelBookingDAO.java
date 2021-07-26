@@ -14,16 +14,16 @@ public interface HotelBookingDAO {
     /**
      * add booked guest data to database
      */
-    void addBookedData();
+    void addBookedData(Guest guest);
 
     /**
      * delete booked guest from database
      */
-    void deleteBookedData();
+    void deleteBookedData(Guest guest);
 
     /**
      * update booked guest in database
      */
-    void updateBookedData();
+    void updateBookedData(Guest guest);
 
 }
