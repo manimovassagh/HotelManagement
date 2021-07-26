@@ -30,7 +30,6 @@ public class GuestReaderFromDatabaseJDBC {
      * name of table in database
      */
     public static final String GUEST_TABLE = "guest";
-
     /**
      * define an array list to save return data from database
      */

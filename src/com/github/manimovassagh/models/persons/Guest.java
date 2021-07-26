@@ -65,6 +65,10 @@ public class Guest extends Person {
         this.numberOfNightsToStay = numberOfNightsToStay;
     }
 
+    public int getBookedRoomNumber() {
+        return bookedRoomNumber;
+    }
+
     @Override
     public String toString() {
         return "Guest{" +
