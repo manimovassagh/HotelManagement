@@ -10,7 +10,7 @@ import java.util.List;
 
 import static com.github.manimovassagh.models.databaseconnection.GuestReaderFromDatabaseJDBC.*;
 
-public class GuestWriterToDatabaseJDBC implements HotelBookingDAO {
+public class GuestWriterToDatabaseJDBC implements GuestDAO {
     Connection connectToGuestDatabase;
 
     /**
@@ -47,7 +47,7 @@ public class GuestWriterToDatabaseJDBC implements HotelBookingDAO {
      * @return booking list collection
      */
     @Override
-    public List<Guest> getAllBookingData() {
+    public List<Guest> getAllGuests() {
         return null;
     }
 
@@ -56,7 +56,7 @@ public class GuestWriterToDatabaseJDBC implements HotelBookingDAO {
      * @param guest booked guest
      */
     @Override
-    public void addBookedData(Guest guest) {
+    public void addGuest(Guest guest) {
         writerToDatabase(guest);
     }
 
@@ -65,7 +65,7 @@ public class GuestWriterToDatabaseJDBC implements HotelBookingDAO {
      * @param guest the guest that we want to delete from database
      */
     @Override
-    public void deleteBookedData(Guest guest) {
+    public void deleteGuest(Guest guest) {
 
     }
 
@@ -74,7 +74,7 @@ public class GuestWriterToDatabaseJDBC implements HotelBookingDAO {
      * @param guest  guest that we want to change(update) in database
      */
     @Override
-    public void updateBookedData(Guest guest) {
+    public void updateGuest(Guest guest) {
 
     }
 }

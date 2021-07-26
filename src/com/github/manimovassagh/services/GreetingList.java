@@ -53,7 +53,7 @@ public class GreetingList {
         System.out.println("Please Enter how many night you want to enjoy our Hotel !");
         hotelGuest.setNumberOfNightsToStay(scanner.nextInt());
         GuestWriterToDatabaseJDBC bookedGuest = new GuestWriterToDatabaseJDBC();
-        bookedGuest.addBookedData(hotelGuest);
+        bookedGuest.addGuest(hotelGuest);
         System.out.println("Very Nice. Registration is now Successfull");
         System.out.println("This is your Final Registration");
         System.out.println(hotelGuest.toString());

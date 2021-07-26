@@ -4,26 +4,26 @@ import com.github.manimovassagh.models.persons.Guest;
 
 import java.util.List;
 
-public interface HotelBookingDAO {
+public interface GuestDAO {
     /**
      * get all booked data for all guests
      * @return list og booked guests
      */
-    List<Guest> getAllBookingData();
+    List<Guest> getAllGuests();
 
     /**
      * add booked guest data to database
      */
-    void addBookedData(Guest guest);
+    void addGuest(Guest guest);
 
     /**
      * delete booked guest from database
      */
-    void deleteBookedData(Guest guest);
+    void deleteGuest(Guest guest);
 
     /**
      * update booked guest in database
      */
-    void updateBookedData(Guest guest);
+    void updateGuest(Guest guest);
 
 }

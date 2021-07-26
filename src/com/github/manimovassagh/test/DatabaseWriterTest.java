@@ -16,7 +16,7 @@ public class DatabaseWriterTest {
         testWriterArray.add(new Guest("mahshid", "froh", Gender.FEMALE, 45, 5));
         GuestWriterToDatabaseJDBC writer = new GuestWriterToDatabaseJDBC();
         writer.writerToDatabase(testGuest);
-        writer.addBookedData(testGuest);
+        writer.addGuest(testGuest);
         testWriterArray.forEach(writer::writerToDatabase);
 
     }
