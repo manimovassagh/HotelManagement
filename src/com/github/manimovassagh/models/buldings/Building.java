@@ -3,8 +3,17 @@ package com.github.manimovassagh.models.buldings;
 
 
 public abstract class Building {
+    /**
+     * define name of building
+     */
     String nameOfBuilding;
+    /**
+     * define address of building
+     */
     String addressOfBuilding;
+    /**
+     * define number of rooms in building
+     */
     int numberOfRooms;
 
     /**

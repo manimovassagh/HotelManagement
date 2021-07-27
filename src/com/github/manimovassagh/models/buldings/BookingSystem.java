@@ -1,7 +1,5 @@
 package com.github.manimovassagh.models.buldings;
 
-import com.github.manimovassagh.models.databaseconnection.GuestWriterToDatabaseJDBC;
-
 import java.util.List;
 import java.util.Scanner;
 import java.util.stream.Stream;
@@ -25,7 +23,5 @@ public class BookingSystem implements CanBook {
         rooms.forEach(System.out::println);
     }
 
-    public static Room getBookedRoom(Room bookedRoom) {
-        return bookedRoom;
-    }
+
 }

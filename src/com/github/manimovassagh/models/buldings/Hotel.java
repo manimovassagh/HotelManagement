@@ -6,7 +6,12 @@ package com.github.manimovassagh.models.buldings;
 public class Hotel extends Building {
 
 
-
+    /**
+     * constructor to define a hotel
+     * @param hotelName name of hotel
+     * @param addressOfHotel address of hotel
+     * @param numberOfRooms number of rooms in hotel
+     */
     public Hotel(String hotelName, String addressOfHotel, Integer numberOfRooms) {
         super(hotelName, addressOfHotel, numberOfRooms);
     }
