@@ -9,6 +9,7 @@ import java.util.stream.Stream;
  * with can Book functional interface implementation and book the room method do the job
  */
 public class BookingSystem implements CanBook {
+
     @Override
     public void bookTheRoom(SingleDouble singleDouble, RoomType roomType) {
         List<Room> rooms = RoomList.getHotelRoomsList();

@@ -80,7 +80,5 @@ public class Guest extends Person {
                 '}';
     }
 
-    public void setBookedRoomNumber(Room room) {
-        BookingSystem.getBookedRoom(room);
-    }
+
 }
