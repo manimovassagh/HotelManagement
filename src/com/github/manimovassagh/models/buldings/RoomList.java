@@ -35,7 +35,28 @@ public class RoomList {
         return roomList;
     }
 
+    public String[] roomToStringArray(Room room){
+        String[] result = new String[5];
+        result[0] = room.getRoomNumber().toString();
+        result[1] = room.getSingleDouble().toString();
+        result[2] = room.getRoomType().toString();
+        Integer price = room.getRoomPrice();
+        result[3] = price.toString();
+        result[4] ="true";
+        return result;
+    }
+    public String[][] roomListToArray(List<Room> rooms){
+        String[][] result = new String[rooms.size()][];
+        for (int i = 0; i <result.length ; i++) {
+            result[i] = roomToStringArray(rooms.get(i));
+
+        }
+        return result;
+    }
+
     public static void setReservationInList (int roomNumber,boolean reservationStatus){
         getHotelRoomsList().get(roomNumber).setReserved(reservationStatus);
     }
+
+
 }
