@@ -3,6 +3,10 @@ package com.github.manimovassagh.models.buldings;
 import java.util.ArrayList;
 import java.util.List;
 
+
+/**
+ * Define a List For Hotel Rooms
+ */
 public class RoomList {
     //    this is for testing the return list
 //    public static void main(String[] args) {

@@ -1,5 +1,9 @@
 package com.github.manimovassagh.models.buldings;
 
+
+/**
+ * Define a class for Room Model
+ */
 public class Room {
 
     /**

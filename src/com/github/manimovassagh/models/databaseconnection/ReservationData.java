@@ -5,6 +5,9 @@ import com.github.manimovassagh.models.persons.Guest;
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ * Generate reservation data to use as feed for database writer
+ */
 public class ReservationData {
 
 

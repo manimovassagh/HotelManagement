@@ -1,7 +1,9 @@
 package com.github.manimovassagh.models.buldings;
 
 
-
+/**
+ * Define a Class for Balding
+ */
 public abstract class Building {
     /**
      * define name of building

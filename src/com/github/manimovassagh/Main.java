@@ -28,7 +28,7 @@ public class Main {
         //initialize chooser method
         listChooser.chooseFromGreetingList();
         List<Room> hotelRoomsList = RoomList.getHotelRoomsList();
-
+      
 
 
     }

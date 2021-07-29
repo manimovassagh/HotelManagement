@@ -10,6 +10,9 @@ import java.util.List;
 
 import static com.github.manimovassagh.models.databaseconnection.GuestReaderFromDatabaseJDBC.*;
 
+/**
+ * write a guest into mySQL Database with JDBC
+ */
 public class GuestWriterToDatabaseJDBC implements GuestDAO {
     Connection connectToGuestDatabase;
 

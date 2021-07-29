@@ -6,6 +6,9 @@ import java.util.List;
 import java.util.Scanner;
 import java.util.stream.Stream;
 
+/**
+ * define the guest of hotel
+ */
 public class Guest extends Person {
     int numberOfNightsToStay;
     int bookedRoomNumber;
