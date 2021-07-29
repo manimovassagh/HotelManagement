@@ -7,22 +7,29 @@ package com.github.manimovassagh.models.persons;
  */
 public class Person extends Animal {
     /**
-     * define name of person
+     * Define name of person
      */
     String name;
     /**
-     * define family of person
+     * Define family of person
      */
     String family;
     /**
-     * define gender of person
+     * Define gender of person
      */
     Gender gender;
     /**
-     * define age of person
+     * Define age of person
      */
     Integer age;
 
+    /**
+     * This is our Person Constructor
+     * @param name Define name for Each Person
+     * @param family Define family for Each Person
+     * @param gender Define Gender for Each Person
+     * @param age Define age for Each Person
+     */
     public Person(String name, String family, Gender gender, Integer age) {
         this.name = name;
         this.family = family;
@@ -30,9 +37,13 @@ public class Person extends Animal {
         this.age = age;
     }
 
+    /**
+     * An Empty Constructor to use in child class
+     */
     public Person() {
 
     }
+
 
     /**
      * get name for each Person
@@ -112,6 +123,10 @@ public class Person extends Animal {
                 '}';
     }
 
+    /**
+     * set primary key for each guest
+     * @param guestId guest id
+     */
     @Override
     public void setPrimaryKey(int guestId) {
 

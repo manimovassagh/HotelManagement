@@ -12,14 +12,26 @@ import java.util.Scanner;
  * Define a list chooser class as somehow GUI for user
  */
 public class ListChooser {
+    /**
+     * Define a Main Service for Hotel
+     */
     private MainService mainService;
+    /**
+     * Define a Map of Room Price List
+     */
     Map<String, Integer> roomPriceList = RoomPriceList.roomPriceGenerate();
 
+    /**
+     * Use main Service in List Chooser
+     * @param mainService Return Main Service
+     */
     public ListChooser(MainService mainService) {
         this.mainService = mainService;
     }
 
-
+    /**
+     * Greeting List Chooser
+     */
     public void chooseFromGreetingList() {
         Person person = mainService.getCustomers().get(0);
 //        System.out.println(person);
@@ -28,7 +40,6 @@ public class ListChooser {
         System.out.println("-----------------------------");
         System.out.println(person.getName() + " Please Select one of the Services");
         System.out.println("1)Booking\n" + "2)Checkout\n" + "3)Food Order\n" + "4)Quit\n");
-
         int choice;
         choice = scanner.nextInt();
 //        System.out.println(choice);

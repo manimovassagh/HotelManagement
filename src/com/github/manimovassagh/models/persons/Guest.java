@@ -43,14 +43,14 @@ public class Guest extends Person {
     }
 
     /**
-     * empty contractor in case we need in future
+     *  An Empty contractor in case we need in future
      */
     public Guest() {
         super();
     }
 
     /**
-     * get the number of nights stays for guest
+     * Get the number of nights stays for guest
      *
      * @return number of nights stay
      */
@@ -59,7 +59,7 @@ public class Guest extends Person {
     }
 
     /**
-     * set the number of stays in hotel
+     * Set the number of stays in hotel
      *
      * @param numberOfNightsToStay number of stays in hotel
      */
@@ -68,10 +68,18 @@ public class Guest extends Person {
         this.numberOfNightsToStay = numberOfNightsToStay;
     }
 
+    /**
+     * Get Booked Rooms Number
+     * @return booked room number
+     */
     public int getBookedRoomNumber() {
         return bookedRoomNumber;
     }
 
+    /**
+     * Generate String from our Guest Class
+     * @return String og Guest
+     */
     @Override
     public String toString() {
         return "Guest{" +

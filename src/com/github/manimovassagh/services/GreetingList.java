@@ -8,19 +8,19 @@ import com.github.manimovassagh.models.persons.Guest;
 import java.util.Scanner;
 
 /**
- * this is our greeting part
- * we greet the user , give some information and ask name and register user inside our hotel
+ * This is our greeting part
+ * We greet the User , give some information and ask name and register user inside our hotel
  */
 public class GreetingList {
     /**
-     * define a main service to be usable by other parts
+     * Define a main service to be usable by other parts
      */
     private MainService mainService;
 
     /**
-     * accept main service as argument to register
+     * Accept main service as argument to register
      *
-     * @param mainService return main service
+     * @param mainService Return main service
      */
     public GreetingList(MainService mainService) {
         this.mainService = mainService;
@@ -28,7 +28,7 @@ public class GreetingList {
 
 
     /**
-     * this is the welcome page for the user
+     * This is the welcome page for the user
      */
     public void greeting() {
         Hotel paradise = HotelInstance.makeHotelInstance();
