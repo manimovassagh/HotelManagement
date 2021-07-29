@@ -11,13 +11,13 @@ import java.util.List;
 import static com.github.manimovassagh.models.databaseconnection.GuestReaderFromDatabaseJDBC.*;
 
 /**
- * write a guest into mySQL Database with JDBC
+ * Write a guest into mySQL Database with JDBC
  */
 public class GuestWriterToDatabaseJDBC implements GuestDAO {
     Connection connectToGuestDatabase;
 
     /**
-     * this method is responsible for writing data in database
+     * This method is responsible for writing data in database
      * @param guest the guest that booked the room
      */
     public void writerToDatabase(Guest guest) {
@@ -46,7 +46,7 @@ public class GuestWriterToDatabaseJDBC implements GuestDAO {
     }
 
     /**
-     * get all booking data from database
+     * Get all booking data from database
      * @return booking list collection
      */
     @Override
@@ -55,7 +55,7 @@ public class GuestWriterToDatabaseJDBC implements GuestDAO {
     }
 
     /**
-     * add booked guest to database
+     * Add booked guest to database
      * @param guest booked guest
      */
     @Override
@@ -64,7 +64,7 @@ public class GuestWriterToDatabaseJDBC implements GuestDAO {
     }
 
     /**
-     * delete booked guest from database
+     * Delete booked guest from database
      * @param guest the guest that we want to delete from database
      */
     @Override
@@ -73,7 +73,7 @@ public class GuestWriterToDatabaseJDBC implements GuestDAO {
     }
 
     /**
-     * update specific booked guest from database
+     * Update specific booked guest from database
      * @param guest  guest that we want to change(update) in database
      */
     @Override

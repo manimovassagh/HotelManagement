@@ -10,7 +10,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * this class is for connecting to mySQL database
+ * This class Defines connecting to mySQL database
  */
 public class GuestReaderFromDatabaseJDBC {
     /**
@@ -36,7 +36,7 @@ public class GuestReaderFromDatabaseJDBC {
     private List<Guest> allGuestsList = new ArrayList<>();
 
     /**
-     * this method read data from database
+     * This method read data from database
      */
     public void readGuestTableFromDatabase() {
         try (Connection connectToGuestDatabase = DriverManager.getConnection(CONNECTIVITY, USER, PASSWORD)) {
@@ -64,9 +64,9 @@ public class GuestReaderFromDatabaseJDBC {
     }
 
     /**
-     * getter for all guest list
+     * Getter for all guest list
      *
-     * @return list og guests in database
+     * @return List og guests in database
      */
     public List<Guest> getAllGuestsList() {
         return allGuestsList;

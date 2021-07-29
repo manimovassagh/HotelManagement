@@ -12,7 +12,7 @@ public class ReservationData {
 
 
     /**
-     * make a sample saving in database with JDBC for learning purpose
+     * Define a sample saving in database with JDBC for learning purpose
      *
      * @param guest              shows the guest
      * @param numberOfNightsStay number of nights that guest want to stay in hotel

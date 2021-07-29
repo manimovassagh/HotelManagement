@@ -1,7 +1,7 @@
 package com.github.manimovassagh.models.buldings;
 
 /**
- * this is our hotel class
+ * Define our hotel class
  */
 public class Hotel extends Building {
 
