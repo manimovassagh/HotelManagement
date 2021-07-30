@@ -3,7 +3,7 @@ package com.github.manimovassagh.test;
 import com.github.manimovassagh.models.databaseconnection.GuestReaderFromDatabaseJDBC;
 
 /**
- * use here to test mock of database connection
+ * Testing The Database Connector Component
  */
 public class DatabaseConnectorTester {
     public static void main(String[] args) {

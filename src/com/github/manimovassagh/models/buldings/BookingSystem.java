@@ -9,11 +9,16 @@ import java.util.Scanner;
 import java.util.stream.Stream;
 
 /**
- * this is to prevent repeat in booking initializer
- * with can Book functional interface implementation and book the room method do the job
+ * Define a Booking System to Handle Booking
+ *  Use "can Book" functional interface implementation
+ *  Book The Room Method Does the Main Booking Responsibility
  */
 public class BookingSystem implements CanBook {
-
+    /**
+     * Initialize the Booking System
+     * @param singleDouble Define Single or Double Room Property
+     * @param roomType Define The VIP or Normal Status for Each Room
+     */
     @Override
     public void bookTheRoom(SingleDouble singleDouble, RoomType roomType) {
         List<Room> rooms = RoomList.getHotelRoomsList();

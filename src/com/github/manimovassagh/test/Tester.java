@@ -5,6 +5,9 @@ import com.github.manimovassagh.models.buldings.RoomPriceList;
 import java.util.HashMap;
 import java.util.Map;
 
+/**
+ * Testing The Room Map
+ */
 public class Tester {
     public static void main(String[] args) {
         Map<String, Integer> roomPrice = new HashMap<>();

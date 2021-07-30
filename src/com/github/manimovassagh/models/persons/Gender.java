@@ -5,10 +5,16 @@ package com.github.manimovassagh.models.persons;
  */
 public enum Gender {
     /**
-     * Male for male
-     * Female for female
-     * Diverse for Diverse
+     * Define Male Guest
      */
-    MALE,FEMALE,DIVERSE
+    MALE,
+    /**
+     * Define Female Guest
+     */
+    FEMALE,
+    /**
+     * Define Diverse Guest
+     */
+    DIVERSE
 }
 

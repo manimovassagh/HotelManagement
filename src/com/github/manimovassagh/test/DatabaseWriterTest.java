@@ -7,6 +7,9 @@ import com.github.manimovassagh.models.persons.Guest;
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ * Testing The database Writer Component
+ */
 public class DatabaseWriterTest {
     public static void main(String[] args) {
         Guest testGuest = new Guest("David", "Titchfiled", Gender.MALE, 55, 7);

@@ -7,6 +7,10 @@ import java.util.Map;
  * Define a Price List for Each Room Type with consideration of Single Or Double
  */
 public  class RoomPriceList {
+    /**
+     * Generate a room Price List as Map Collection
+     * @return Room Price List HashMap
+     */
     public static Map<String,Integer> roomPriceGenerate(){
         Map<String, Integer> roomPrice = new HashMap<>();
         roomPrice.put("Normal Single Room", 80);

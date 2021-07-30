@@ -18,7 +18,7 @@ public class Hotel extends Building {
 
 
     /**
-     * to string method to use whenever you need show things in string
+     * Define To String Method, You can Use it whenever you need an String Output from your Hotel
      *
      * @return string details
      */

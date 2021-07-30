@@ -4,6 +4,9 @@ import com.bethecoder.ascii_table.ASCIITable;
 import com.github.manimovassagh.models.buldings.RoomType;
 import com.github.manimovassagh.models.buldings.SingleDouble;
 
+/**
+ * This is to testing The Formatter Library
+ */
 class JavaConsoleTableExample {
 
     public static void main(String[] args) {

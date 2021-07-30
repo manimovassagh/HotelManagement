@@ -1,16 +1,18 @@
 package com.github.manimovassagh.models.persons;
 
-import com.github.manimovassagh.models.buldings.*;
 
-import java.util.List;
-import java.util.Scanner;
-import java.util.stream.Stream;
 
 /**
- * define the guest of hotel
+ * Define the guest of hotel
  */
 public class Guest extends Person {
+    /**
+     * Define Number Of Nights That The Guest Want to Stay In Hotel
+     */
     int numberOfNightsToStay;
+    /**
+     * Define The Booked Room Number
+     */
     int bookedRoomNumber;
 
 
