@@ -10,6 +10,7 @@ import java.util.Map;
  */
 public class Tester {
     public static void main(String[] args) {
+        //just to test price List
         Map<String, Integer> roomPrice = new HashMap<>();
         roomPrice.put("Normal Single Room", 80);
         roomPrice.put("Normal Double Room", 99);
