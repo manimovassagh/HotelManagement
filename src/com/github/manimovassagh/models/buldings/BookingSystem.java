@@ -16,6 +16,7 @@ import java.util.stream.Stream;
 public class BookingSystem implements CanBook {
     /**
      * Initialize the Booking System
+     *This booking System handle all process for Booking
      * @param singleDouble Define Single or Double Room Property
      * @param roomType Define The VIP or Normal Status for Each Room
      */
